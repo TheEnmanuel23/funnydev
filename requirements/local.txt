@@ -1,1 +1,1 @@
-local.txt
+ipdb==0.10.1

@@ -26,6 +26,7 @@ SECRET_KEY = '=&ym^i5zulqvl=+e_*1rv7gevc7ih%_ymzh@h00gy%1&bza-qp'
 # Application definition
 
 INSTALLED_APPS = [
+    'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
