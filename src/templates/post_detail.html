@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+{% block content %}
+  	<figure>
+		<img src="{{ post.poster.url }}" alt="{{post.title}}">
+	</figure>
+	<h1><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1>
+	<h6>{{ post.autor }}</h6>
+	<h5>{{ post.timestamp }}</h5>
+	<p>{{ post.content|safe }}</p>
+
+	
+{% endblock content %}
