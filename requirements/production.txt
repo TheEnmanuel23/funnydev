@@ -1,1 +1,1 @@
-production.txt
+whitenoise==3.2.2
