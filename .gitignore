@@ -156,3 +156,4 @@ jspm_packages
 *.tgz
 
 static_cdn
+media_cdn
