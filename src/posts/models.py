@@ -1,5 +1,8 @@
 from django.db import models
 from django.core.urlresolvers import reverse
+from django.template.defaultfilters import slugify
+from django.db.models.signals import pre_save
+from django.dispatch import receiver
 
 # Create your models here.
 STATE = (
@@ -16,7 +19,7 @@ class Category(models.Model):
 
 
 class Post(models.Model):
-	slug = models.SlugField(unique=True,editable=False, default='')
+	slug = models.SlugField(editable=False, default='')
 	title = models.CharField(max_length = 120)	
 	autor = models.CharField(max_length=100, default='admin')
 	content = models.TextField()
@@ -26,8 +29,20 @@ class Post(models.Model):
 	poster = models.ImageField(upload_to='posters_post/', null=True)
 	category = models.ManyToManyField(Category)
 
-	def get_absolute_url(self):
-		return reverse('post_detail', kwargs={ 'pk': self.pk } )
+	def get_absolute_url(self):		
+		kwargs = {
+			'year': self.timestamp.year,
+			'month': self.timestamp.month,
+			'day': self.timestamp.day,
+			'pk': self.pk,
+			'slug': self.slug
+        }
+		return reverse('post_detail', kwargs=kwargs)
 
 	def __str__(self):
 		return self.title
+
+
+@receiver(pre_save, sender=Post)
+def pre_save_post_receiver(sender, instance, *args, **kwargs):
+	instance.slug = slugify(instance.title)
