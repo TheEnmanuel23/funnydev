@@ -21,7 +21,7 @@ class Category(models.Model):
 class Post(models.Model):
 	slug = models.SlugField(editable=False, default='')
 	title = models.CharField(max_length = 120)	
-	autor = models.CharField(max_length=100, default='admin')
+	author = models.CharField(max_length=100, default='admin')
 	content = models.TextField()
 	updated = models.DateTimeField(auto_now=True, auto_now_add=False)
 	timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
