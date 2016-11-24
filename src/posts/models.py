@@ -29,7 +29,9 @@ class Post(models.Model):
 	timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
 	state = models.CharField(max_length=1, choices=STATE, default='b')
 	poster = models.ImageField(upload_to='posters_post/', null=True)
+	description = models.CharField(max_length=2000, default='')
 	category = models.ManyToManyField(Category)
+
 
 	def get_absolute_url(self):		
 		kwargs = {
