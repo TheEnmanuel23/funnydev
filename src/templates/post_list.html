@@ -4,20 +4,13 @@
 		<input type="text" name="value" placeholder="Buscar post">
 		<input type="submit" value="Buscar">
 	</form>
-	<div class="row">
-		<div class="col-sm-6">
-		<div class="thumbnail">
 	{% for post in posts %}
-		<div>
-			<figure>
-				<img src="{{ post.poster.url }}" alt="">
-			</figure>
+		<div class="post">	
 			<h1><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1>
+			<p>{{ post.description }}</p>
 			<h6>{{ post.author }}</h6>
 			<h5>{{ post.timestamp }}</h5>
 			<p><a href="{{ post.get_absolute_url }}" class="btn btn-primary" role='button'>Leer más</a></p>
 		</div>	
-		</div></div>
 	{% endfor %}
-	</div>
 {% endblock content %}
