@@ -17,7 +17,7 @@ class PostList( ListView ):
     			Q(title__icontains=valueToFind) |
     			Q(content__icontains=valueToFind) |
     			Q(author__icontains=valueToFind)
-    			).distinct()
+    		).distinct()
     	return self.render_to_response(self.get_context_data())
 
 class PostDetail( DetailView ):
