@@ -24,9 +24,12 @@
 		<img src="{{ post.poster.url }}" alt="{{post.title}}">
 	</figure>
 	<h1><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1>
-	<h6>{{ post.autor }}</h6>
+	<h6>{{ post.author }}</h6>
 	<h5>{{ post.timestamp }}</h5>
 	<p>{{ post.content|safe }}</p>
+	{% for cat in post.category.all %}
+		<p>{{ cat }}</p>
+	{% endfor %}
 	<p>
 		<div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 	</p>
