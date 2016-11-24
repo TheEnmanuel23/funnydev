@@ -3,6 +3,8 @@ from django.core.urlresolvers import reverse
 from django.template.defaultfilters import slugify
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
+from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 
 # Create your models here.
 STATE = (
@@ -22,7 +24,7 @@ class Post(models.Model):
 	slug = models.SlugField(editable=False, default='')
 	title = models.CharField(max_length = 120)	
 	author = models.CharField(max_length=100, default='admin')
-	content = models.TextField()
+	content = RichTextUploadingField()
 	updated = models.DateTimeField(auto_now=True, auto_now_add=False)
 	timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
 	state = models.CharField(max_length=1, choices=STATE, default='b')
