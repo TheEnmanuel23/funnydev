@@ -1,8 +1,7 @@
 {% extends 'home.html' %}
 {% block content %}
 	<form method="GET" action="">
-		<input type="text" name="value" placeholder="Buscar post">
-		<input type="submit" value="Buscar">
+		<input type="search" name="value" placeholder="Buscar post" value="{{ request.GET.value }}">		
 	</form>
 	
 	<div class="post-list-container">

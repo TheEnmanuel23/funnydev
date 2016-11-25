@@ -24,10 +24,10 @@ html, body{
   position: fixed;
   right: 0;
   left: 0;
-  height: 50px;
+  height: 60px;
   
   nav{
-    margin-top: 15px;
+    margin-top: 20px;
     ul{
       display: flex;
       justify-content: center;
@@ -47,19 +47,31 @@ html, body{
       }
 
     .funnydev{
-        a{
-            color: black;
-            margin: 0 20px 0 20px;
-            }
-        }
+      a{
+          color: black;
+          margin: 0 20px 0 20px;
+          }
+      }
     }
   }
 }
 form{
   position: fixed;  
-  margin-top: 10px;
+  margin-top: 7px;
   margin-left: 20px;
   z-index: 100;
+
+  input[type=search]{
+    border: 0px solid $color_gray;
+    background: white;
+    height: 45px;
+    font-family: $title-font;
+    font-size: 20px;
+
+    &:focus{
+      border: 1px solid $color_gray;
+    }
+  }
 }
 .post-list-container{
   display: flex;
@@ -97,8 +109,8 @@ form{
         font-style: italic;
 
         span{
-            font-weight: bold;
-            color: white;
+          font-weight: bold;
+          color: white;
         }
         a{
           color: $color_gray;
