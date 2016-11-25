@@ -1,7 +1,10 @@
 {% extends 'home.html' %}
 {% block content %}
 	<form method="GET" action="">
-		<input type="search" name="value" placeholder="Buscar post" value="{{ request.GET.value }}">		
+		<div class="find-control-container">
+			<i class="fa fa-search" aria-hidden="true"></i>
+			<input type="search" name="value" placeholder="Buscar post" value="{{ request.GET.value }}">			
+		</div>	
 	</form>
 	
 	<div class="post-list-container">

@@ -40,14 +40,18 @@ form {
   margin-top: 7px;
   margin-left: 20px;
   z-index: 100; }
-  form input[type=search] {
-    border: 0px solid #d4d4d4;
+  form .find-control-container {
     background: white;
-    height: 45px;
-    font-family: "Droid Sans", sans-serif;
-    font-size: 20px; }
-    form input[type=search]:focus {
-      border: 1px solid #d4d4d4; }
+    padding-left: 10px; }
+    form .find-control-container input[type=search] {
+      background: white;
+      border: 0px solid #d4d4d4;
+      height: 45px;
+      font-family: "Droid Sans", sans-serif;
+      font-size: 20px; }
+    form .find-control-container i {
+      font-size: 20px;
+      color: #909090; }
 
 .post-list-container {
   display: flex;

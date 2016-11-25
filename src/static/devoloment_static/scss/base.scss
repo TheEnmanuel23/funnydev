@@ -5,6 +5,8 @@ $body-font: 'Roboto', sans-serif;
 
 // color
 $color_gray: #d4d4d4;
+$color_nav: #f3f3f3;
+$color_search_icon: #909090;
 
 html, body{
   height: 100%;
@@ -19,7 +21,7 @@ html, body{
 }
 
 .main-menu{
-  background: #f3f3f3;
+  background: $color_nav;
   z-index: 100;
   position: fixed;
   right: 0;
@@ -60,16 +62,22 @@ form{
   margin-top: 7px;
   margin-left: 20px;
   z-index: 100;
-
-  input[type=search]{
-    border: 0px solid $color_gray;
+  
+  .find-control-container{    
     background: white;
-    height: 45px;
-    font-family: $title-font;
-    font-size: 20px;
+    padding-left: 10px;
 
-    &:focus{
-      border: 1px solid $color_gray;
+    & input[type=search]{
+      background: white;
+      border: 0px solid $color_gray;
+      height: 45px;
+      font-family: $title-font;
+      font-size: 20px;      
+    }
+    
+    & i{
+      font-size: 20px;
+      color: $color_search_icon;
     }
   }
 }
