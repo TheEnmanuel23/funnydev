@@ -7,13 +7,15 @@
 	
 	<div class="post-list-container">
 		 {% for post in posts %}
-			<div class="post">	
-				<h5 class="date">{{ post.timestamp }}</h5>
-				<h1 class="title">{{ post.title }}</h1>
-				<p class="description">{{ post.description }}</p>
-				<h6 class="author">{{ post.author }}</h6>
-				<p><a href="{{ post.get_absolute_url }}" class="read-more">Leer más</a></p>
-			</div>
+		 	<div class="post-container">		 		
+				<div class="post">	
+					<h5 class="date">{{ post.timestamp }}</h5>
+					<h1 class="title">{{ post.title }}</h1>
+					<p class="description">{{ post.description }}</p>
+					<h6 class="author">{{ post.author }}</h6>
+					<a href="{{ post.get_absolute_url }}" class="read-more">Leer más</a>
+				</div>
+		 	</div>
 		{% endfor %}
 	</div>
 {% endblock content %}

@@ -15,7 +15,7 @@ html, body {
   position: fixed;
   right: 0;
   left: 0;
-  height: 70px; }
+  height: 50px; }
   .main-menu nav {
     margin-top: 27px; }
     .main-menu nav ul {
@@ -39,30 +39,45 @@ form {
 .post-list-container {
   display: flex;
   height: 100%; }
-  .post-list-container .post {
+  .post-list-container .post-container {
     padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 15px;
-    width: 250px;
-    position: relative;
-    background: #72616e;
-    color: white; }
-    .post-list-container .post .title {
-      font-size: 35px;
-      margin-top: 0px; }
-    .post-list-container .post .date {
-      margin-bottom: 0px;
-      text-transform: uppercase; }
-    .post-list-container .post .description {
-      color: #d4d4d4; }
-    .post-list-container .post .author {
-      font-size: 13px; }
-    .post-list-container .post .read-more {
-      position: absolute;
-      bottom: 0;
-      margin-bottom: 20px;
-      text-decoration: none;
-      color: white; }
+    padding-bottom: 15px; }
+    .post-list-container .post-container .post {
+      color: white;
+      word-wrap: break-word;
+      width: 270px; }
+      .post-list-container .post-container .post .title {
+        font-size: 35px;
+        margin-top: 0px; }
+      .post-list-container .post-container .post .date {
+        margin-bottom: 0px;
+        text-transform: uppercase; }
+      .post-list-container .post-container .post .description {
+        color: #d4d4d4; }
+      .post-list-container .post-container .post .author {
+        font-size: 13px; }
+      .post-list-container .post-container .post .read-more {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: white;
+        width: 100px; }
+  .post-list-container .post-container:nth-child(1n+7) {
+    background: #0082c8; }
+  .post-list-container .post-container:nth-child(2n+6) {
+    background: #167c80; }
+  .post-list-container .post-container:nth-child(3n+5) {
+    background: #a2c5bf; }
+  .post-list-container .post-container:nth-child(4n+4) {
+    background: #e54b4b; }
+  .post-list-container .post-container:nth-child(5n+3) {
+    background: #16528e; }
+  .post-list-container .post-container:nth-child(6n+2) {
+    background: #e8846b; }
+  .post-list-container .post-container:nth-child(7n+1) {
+    background: #72616e; }
 
 /*# sourceMappingURL=base.css.map */
