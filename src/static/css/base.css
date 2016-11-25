@@ -1,0 +1,68 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif; }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; }
+
+.main-menu {
+  background: #f3f3f3;
+  z-index: 100;
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 70px; }
+  .main-menu nav {
+    margin-top: 27px; }
+    .main-menu nav ul {
+      display: flex;
+      justify-content: center;
+      flex-direction: row; }
+      .main-menu nav ul li:nth-child(2) {
+        margin: 0 10px 0 10px; }
+      .main-menu nav ul li {
+        list-style: none; }
+        .main-menu nav ul li a {
+          text-decoration: none;
+          color: gray; }
+
+form {
+  position: fixed;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 100; }
+
+.post-list-container {
+  display: flex;
+  height: 100%; }
+  .post-list-container .post {
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    width: 250px;
+    position: relative;
+    background: #72616e;
+    color: white; }
+    .post-list-container .post .title {
+      font-size: 35px;
+      margin-top: 0px; }
+    .post-list-container .post .date {
+      margin-bottom: 0px;
+      text-transform: uppercase; }
+    .post-list-container .post .description {
+      color: #d4d4d4; }
+    .post-list-container .post .author {
+      font-size: 13px; }
+    .post-list-container .post .read-more {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: white; }
+
+/*# sourceMappingURL=base.css.map */
