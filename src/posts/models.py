@@ -33,7 +33,6 @@ class Post(models.Model):
 	updated = models.DateTimeField(auto_now=True, auto_now_add=False)
 	timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
 	state = models.CharField(max_length=1, choices=STATE, default='b')
-	poster = models.ImageField(upload_to='posters_post/', null=True)
 	description = models.CharField(max_length=2000, default='')
 	author = models.ForeignKey(Author)
 	category = models.ManyToManyField(Category)

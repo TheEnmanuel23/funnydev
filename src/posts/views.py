@@ -16,7 +16,7 @@ class PostList( ListView ):
     		self.object_list = self.model.objects.filter(
     			Q(title__icontains=valueToFind) |
     			Q(content__icontains=valueToFind) |
-    			Q(author__icontains=valueToFind) |
+    			Q(author__name__icontains=valueToFind) |
                 Q(category__nombre__icontains=valueToFind)
     		).distinct()
     	return self.render_to_response(self.get_context_data())
