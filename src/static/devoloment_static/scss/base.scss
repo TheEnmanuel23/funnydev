@@ -8,6 +8,19 @@ $color_gray: #d4d4d4;
 $color_nav: #f3f3f3;
 $color_search_icon: #909090;
 
+
+// prefijos with mixin
+$prefixes: "webkit", "moz", "ms", "o", "none";
+@mixin prefix($property, $arguments) {
+ @each $prefix in $prefixes {
+   @if $prefix == "none" {
+     #{$property}: $arguments;
+   } @else {
+     -#{$prefix}-#{$property}: $arguments;
+   } 
+ }
+}
+
 html, body{
   height: 100%;
   width: 100%;
@@ -92,6 +105,7 @@ form{
     padding-bottom: 15px;
     position: relative;
 
+    // @include prefix(transition, all .9s ease);
     .post{      
       color: white;
       word-wrap: break-word;
@@ -140,6 +154,11 @@ form{
           margin-right: 5px;
         }
       }
+    }
+
+    &:hover{
+      @include prefix(transform, scale(1.1));
+      z-index: 99;
     }
   }
   
