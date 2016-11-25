@@ -1,3 +1,8 @@
+// Vars
+$title-font: 'Droid Sans', sans-serif;;
+$description-font: 'BenchNine', sans-serif;;
+$body-font: 'Roboto', sans-serif;;
+
 html, body{
   height: 100%;
   width: 100%;
@@ -62,7 +67,8 @@ form{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 15px;
-    
+    position: relative;
+
     .post{      
       color: white;
       word-wrap: break-word;
@@ -71,6 +77,7 @@ form{
       .title{
         font-size: 35px;  
         margin-top: 0px;
+        font-family: $title-font;
       }
       .date{
         margin-bottom: 0px;
@@ -78,9 +85,18 @@ form{
       }
       .description{
         color: #d4d4d4;
+        font-family: $description-font;
+        font-size: 20px;
       }
       .author{
         font-size: 13px;
+        color: #d4d4d4;
+        font-style: italic;
+
+        span{
+            font-weight: bold;
+            color: white;
+        }
       }
       .read-more{
         position: absolute;
@@ -89,6 +105,9 @@ form{
         text-decoration: none;
         color: white;
         width: 100px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
       }
     }
   }
