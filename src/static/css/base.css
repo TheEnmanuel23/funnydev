@@ -17,22 +17,27 @@ html, body {
   left: 0;
   height: 50px; }
   .main-menu nav {
-    margin-top: 27px; }
+    margin-top: 15px; }
     .main-menu nav ul {
       display: flex;
       justify-content: center;
       flex-direction: row; }
-      .main-menu nav ul li:nth-child(2) {
-        margin: 0 10px 0 10px; }
       .main-menu nav ul li {
         list-style: none; }
         .main-menu nav ul li a {
           text-decoration: none;
-          color: gray; }
+          color: gray;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 13px;
+          letter-spacing: 1px; }
+      .main-menu nav ul .funnydev a {
+        color: black;
+        margin: 0 20px 0 20px; }
 
 form {
   position: fixed;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 20px;
   z-index: 100; }
 
