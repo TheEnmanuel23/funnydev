@@ -1,7 +1,10 @@
-// Vars
-$title-font: 'Droid Sans', sans-serif;;
-$description-font: 'BenchNine', sans-serif;;
-$body-font: 'Roboto', sans-serif;;
+// fonts
+$title-font: 'Droid Sans', sans-serif;
+$description-font: 'BenchNine', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+// color
+$color_gray: #d4d4d4;
 
 html, body{
   height: 100%;
@@ -84,18 +87,21 @@ form{
         text-transform: uppercase;
       }
       .description{
-        color: #d4d4d4;
+        color: $color_gray;
         font-family: $description-font;
         font-size: 20px;
       }
       .author{
         font-size: 13px;
-        color: #d4d4d4;
+        color: $color_gray;
         font-style: italic;
 
         span{
             font-weight: bold;
             color: white;
+        }
+        a{
+          color: $color_gray;
         }
       }
       .read-more{

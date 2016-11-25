@@ -72,6 +72,8 @@ form {
         .post-list-container .post-container .post .author span {
           font-weight: bold;
           color: white; }
+        .post-list-container .post-container .post .author a {
+          color: #d4d4d4; }
       .post-list-container .post-container .post .read-more {
         position: absolute;
         bottom: 0;
