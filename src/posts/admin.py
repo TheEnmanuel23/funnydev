@@ -12,5 +12,6 @@ class PostModelAdmin(admin.ModelAdmin):
 	class Meta:
 		model = Post
 
-admin.site.register(Post, PostModelAdmin)
+admin.site.register(Post)
 admin.site.register(Category)
+admin.site.register(Author)
