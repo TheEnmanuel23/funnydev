@@ -9,7 +9,8 @@
 	
 	<div class="post-list-container">
 		 {% for post in posts %}
-		 	<div class="post-container">		 		
+		 	<div class="post-container">
+		 		<div class="post-zoom"></div> 		
 				<div class="post">	
 					<h5 class="date">{{ post.timestamp|date:'d M Y' }}</h5>
 					<h1 class="title">{{ post.title }}</h1>
