@@ -23,6 +23,16 @@
   	{% block content %}
 	{% endblock content %}
 	<script src="https://use.fontawesome.com/b9241a257e.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $body = $('body');
+			var $post = $('.post-list-container .post-container');
+			$post.hover(function(){
+				$body.css('overflow-y', 'hidden');
+			});
+		});
+	</script>
   </div>	
 </body>
 </html>
