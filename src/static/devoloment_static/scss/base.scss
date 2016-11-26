@@ -26,7 +26,7 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    overflow-x:hidden
+    overflow-x: hidden;
 }
 
 .main-container {
@@ -103,7 +103,7 @@ form {
 .post-list-container {
     display: flex;
     height: 100%;
-    overflow-x:hidden;
+    overflow-x: hidden;
 
     .post-container {
         position: relative;
@@ -136,7 +136,6 @@ form {
 
             .author {
                 font-size: 13px;
-                color: $color_gray;
                 font-style: italic;
 
                 span {
@@ -170,10 +169,15 @@ form {
         & .post-zoom {
             width: 300px;
             height: 100%;
+
             @include prefix(transition, transform 200ms linear);
         }
 
-        &:hover .post-zoom{
+        &:hover .post .description, &:hover .post .author a{
+            color: white;
+        }
+
+        &:hover .post-zoom {
             -moz-transform: scale(1.1);
             -moz-transform-origin: bottom;
             z-index: 50;

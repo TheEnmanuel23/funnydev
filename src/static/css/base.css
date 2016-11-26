@@ -81,7 +81,6 @@ form {
         font-size: 20px; }
       .post-list-container .post-container .post .author {
         font-size: 13px;
-        color: #d4d4d4;
         font-style: italic; }
         .post-list-container .post-container .post .author span {
           font-weight: bold;
@@ -106,6 +105,8 @@ form {
       -ms-transition: transform 200ms linear;
       -o-transition: transform 200ms linear;
       transition: transform 200ms linear; }
+    .post-list-container .post-container:hover .post .description, .post-list-container .post-container:hover .post .author a {
+      color: white; }
     .post-list-container .post-container:hover .post-zoom {
       -moz-transform: scale(1.1);
       -moz-transform-origin: bottom;
