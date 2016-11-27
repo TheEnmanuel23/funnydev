@@ -182,8 +182,8 @@ form {
         }
 
         &:hover .post-zoom {
-            -moz-transform: scale(1.1);
-            -moz-transform-origin: bottom;
+            @include prefix(transform, scale(1.1));
+            @include prefix(transform-origin, bottom);
             z-index: 50;
         }
 

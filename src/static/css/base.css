@@ -116,8 +116,16 @@ form {
     .post-list-container .post-container:hover .post .description, .post-list-container .post-container:hover .post .author a {
       color: white; }
     .post-list-container .post-container:hover .post-zoom {
+      -webkit-transform: scale(1.1);
       -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+      -webkit-transform-origin: bottom;
       -moz-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+      -o-transform-origin: bottom;
+      transform-origin: bottom;
       z-index: 50; }
     .post-list-container .post-container:nth-child(1n+7) .post-zoom {
       background: #0082c8; }
