@@ -8,7 +8,7 @@ $color_gray: #d4d4d4;
 $color_nav: #f3f3f3;
 $color_search_icon: #909090;
 
-// prefijos with mixin
+// prefixes with mixin
 $prefixes: "webkit", "moz", "ms", "o", "none";
 
 @mixin prefix($property, $arguments) {
@@ -169,7 +169,7 @@ form {
         & .post-zoom {
             width: 300px;
             height: 100%;
-            @include prefix(transition, transform 200ms linear);
+            @include prefix(transition, transform 200ms ease-in-out);
         }
         &:hover .post .description, &:hover .post .author a{
             color: white;
