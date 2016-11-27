@@ -28,9 +28,12 @@
 		$(function(){
 			var $body = $('body');
 			var $post = $('.post-list-container .post-container');
-			$post.hover(function(){
+			$post.hover(function(e){
 				$body.css('overflow-y', 'hidden');
-				var $post_container = $('.post-container');
+				var $background_trans = $('.post-container .post-zoom .background-trans');
+				$background_trans.toggleClass('opacity_post');
+				$current_post_hover = $(e.currentTarget).find('.post-zoom').find('.background-trans');
+				$current_post_hover.removeClass('opacity_post');
 			});
 		});
 	</script>
