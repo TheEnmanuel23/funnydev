@@ -12,12 +12,13 @@
 		 	<div class="post-container">		 			
 		 		<div class="post-zoom">
 		 			<div class="background-trans"></div>
+		 			<div class="container-read-more"></div>
 		 		</div>
 				<div class="post">	
 					<h5 class="date">{{ post.timestamp|date:'d M Y' }}</h5>
 					<h1 class="title">{{ post.title }}</h1>
 					<p class="description">{{ post.description }}</p>
-					<h6 class="author"><span>Creado por:</span> <a href="{{ post.author.link }}" target="blank">{{ post.author }}</a></h6>
+					<h6 class="author"><span>Creado por:</span> <a href="{{ post.author.link }}" target="blank">{{ post.author }}</a></h6>					
 					<a href="{{ post.get_absolute_url }}" class="read-more"><i class="fa fa-eye eye-read-more" aria-hidden="true">						
 					</i>Leer más</a>
 				</div>

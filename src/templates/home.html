@@ -33,7 +33,9 @@
 				var $background_trans = $('.post-container .post-zoom .background-trans');
 				$background_trans.toggleClass('opacity_post');
 				$current_post_hover = $(e.currentTarget).find('.post-zoom').find('.background-trans');
+				$current_post_readmore_container = $(e.currentTarget).find('.post-zoom').find('.container-read-more');
 				$current_post_hover.removeClass('opacity_post');
+				$current_post_readmore_container.toggleClass('opacity_readmore');
 			});
 		});
 	</script>
