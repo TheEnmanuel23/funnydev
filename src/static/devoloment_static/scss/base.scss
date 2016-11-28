@@ -7,6 +7,7 @@ $body-font: "Roboto", sans-serif;
 $color_gray: #d4d4d4;
 $color_nav: #f3f3f3;
 $color_search_icon: #909090;
+$color_transparent: #1E1E1E;
 
 // prefixes with mixin
 $prefixes: "webkit", "moz", "ms", "o", "none";
@@ -41,10 +42,10 @@ html, body {
     position: fixed;
     right: 0;
     left: 0;
-    height: 60px;
+    height: 50px;
 
     nav {
-        margin-top: 20px;
+        margin-top: 15px;
 
         ul {
             display: flex;
@@ -59,7 +60,7 @@ html, body {
                     color: gray;
                     text-transform: uppercase;
                     font-weight: bold;
-                    font-size: 13px;
+                    font-size: 12px;
                     letter-spacing: 1px;
                 }
             }
@@ -76,7 +77,7 @@ html, body {
 
 form {
     position: fixed;
-    margin-top: 7px;
+    margin-top: 5px;
     margin-left: 20px;
     z-index: 100;
 
@@ -87,9 +88,9 @@ form {
         & input[type=search] {
             background: white;
             border: 0px solid $color_gray;
-            height: 45px;
+            height: 40px;
             font-family: $title-font;
-            font-size: 20px;
+            font-size: 18px;
         }
 
         & i {
@@ -164,11 +165,16 @@ form {
                 }
             }            
         }
+        & .background-trans{
+             @include prefix(transition, background-color 400ms linear);
+        }
 
         & .post-zoom {
             width: 300px;
             height: 100%;
-            @include prefix(transition, transform 200ms ease-in-out);
+            z-index: 55;
+
+            @include prefix(transition, transform 300ms ease-in-out);
 
             & .container-read-more{
             	height: 65px;
@@ -184,7 +190,6 @@ form {
         &:hover .post-zoom {
             @include prefix(transform, scale(1.1));
             @include prefix(transform-origin, bottom);
-            z-index: 50;
         }
 
         &:nth-child(1n+7) .post-zoom {
@@ -219,12 +224,16 @@ form {
 
 .opacity_post{
  	width: 300px;
-    background-color: #2c2c2c;
+    background-color: $color_transparent;
     opacity: 0.6;
     height: 100%;
 }
 
 .opacity_readmore{
-	background: #2c2c2c;
-    opacity: 0.6;
+	background: $color_transparent;
+    opacity: 0.3;
+}
+
+.color_gray_post{
+     color: $color_gray;
 }
