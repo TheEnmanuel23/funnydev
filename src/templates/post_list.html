@@ -2,8 +2,8 @@
 {% block content %}
 	<form method="GET" action="">
 		<div class="find-control-container">
-			<i class="fa fa-search" aria-hidden="true"></i>
-			<input type="search" name="value" placeholder="Buscar" value="{{ request.GET.value }}">			
+			<div class="container-icon-search"><i class="fa fa-search" aria-hidden="true"></i></div>
+			<input type="search" name="value" placeholder="Buscar" value="{{ request.GET.value }}" class="search">			
 		</div>	
 	</form>
 	
