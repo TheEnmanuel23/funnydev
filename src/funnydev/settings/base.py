@@ -108,7 +108,7 @@ CKEDITOR_CONFIGS = {
             [
                 'codesnippet',
             ]),
-        'codeSnippet_theme': 'zenburn'
+        'codeSnippet_theme': 'railscasts'
     },
 }
 
