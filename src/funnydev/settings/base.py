@@ -104,5 +104,12 @@ CKEDITOR_UPLOAD_PATH = "post_resources/"
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': 'full',
+        'extraPlugins': ','.join(
+            [
+                'codesnippet',
+            ]),
+        'codeSnippet_theme': 'zenburn'
     },
 }
+
+#config.codeSnippet_theme = 'school_book, monokai_sublime';
