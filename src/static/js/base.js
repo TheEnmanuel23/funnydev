@@ -1,8 +1,10 @@
 $(function(){
 	var $body = $('body');
 	var $post = $('.post-list-container .post-container');
+	
 	$post.hover(function(e){
 		$body.css('overflow-y', 'hidden');
+		/*
 		var $background_trans = $('.post-container .post-zoom .background-trans');
 		$current_post_readmore_container = $(e.currentTarget).find('.container-read-more');
 		$current_post_hover = $(e.currentTarget).find('.post-zoom').find('.background-trans');
@@ -33,4 +35,5 @@ $(function(){
 		var $input = $find_control_container.find('.search');
 		$input.fadeToggle( 'fast');
 	});
+	*/
 });

@@ -1,12 +1,16 @@
-{% extends 'home.html' %}
+{% extends 'base.html' %}
+
+{% block title%}EJ - Funnydev{% endblock title %}
+
 {% block content %}
+<!--
 	<form method="GET" action="">
 		<div class="find-control-container">
 			<div class="container-icon-search"><i class="fa fa-search" aria-hidden="true"></i></div>
 			<input type="search" name="value" placeholder="Buscar" value="{{ request.GET.value }}" class="search">			
 		</div>	
 	</form>
-	
+	-->
 	<div class="post-list-container">
 		 {% for post in posts %}
 		 	<div class="post-container">

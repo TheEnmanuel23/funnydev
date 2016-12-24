@@ -1,0 +1,89 @@
+ // fonts
+$title-font: "Droid Sans", sans-serif;
+$description-font: "BenchNine", sans-serif;
+$body-font: "Roboto", sans-serif;
+
+$bordeRojo: 1px solid red;
+
+// color
+$color_gray: #d4d4d4;
+$color_nav: #f3f3f3;
+$color_search_icon: #909090;
+$color_transparent: #1E1E1E;
+
+// prefixes with mixin
+$prefixes: "webkit", "moz", "ms", "o", "none";
+
+@mixin prefix($property, $arguments) {
+    @each $prefix in $prefixes {
+        @if $prefix == "none" {
+            #{$property}: $arguments;
+        }
+        @else {
+            -#{$prefix}-#{$property}: $arguments;
+        }
+    }
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    .main-menu{
+        z-index: 10;
+
+        nav{ 
+        background: $color_nav;
+            position: fixed;
+            right: 0;
+            left: 0;
+
+            ul{
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+
+                li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    .content{
+        height: 100%;
+
+        .post-list-container{
+            display: flex;
+            height: 100%;
+
+            .post-container{
+                position: relative;
+
+                .post-zoom{
+                    width: 300px;
+                    height: 100%;              
+                }
+
+                .post{
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    padding: 0px 30px;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                }
+            }
+        }        
+    }
+}
