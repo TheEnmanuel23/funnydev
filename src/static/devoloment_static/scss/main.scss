@@ -43,7 +43,7 @@ html, body {
         z-index: 10;
 
         nav{ 
-        background: $color_nav;
+            background: $color_nav;
             position: fixed;
             right: 0;
             left: 0;
@@ -70,19 +70,54 @@ html, body {
             .post-container{
                 position: relative;
 
-                .post-zoom{
-                    width: 300px;
-                    height: 100%;              
-                }
-
                 .post{
                     position: absolute;
                     top: 0;
-                    height: 100%;
                     padding: 0px 30px;
                     word-wrap: break-word;
                     word-break: break-all;
+                    margin-top: 80px;
                 }
+
+                .post-zoom{
+                    width: 300px;
+                    height: 100%;
+                    //@include prefix(transition, transform 300ms ease-in-out);
+                }
+
+                &:hover .post-zoom {
+                    @include prefix(transform, scale(1.1));
+                    @include prefix(transform-origin, bottom);
+                }
+
+                &:nth-child(1n+7) .post-zoom {
+                    background: #0082c8;
+                }
+
+                &:nth-child(2n+6) .post-zoom {
+                    background: #167c80;
+                }
+
+                &:nth-child(3n+5) .post-zoom {
+                    background: #a2c5bf;
+                }
+
+                &:nth-child(4n+4) .post-zoom {
+                    background: #e54b4b;
+                }
+
+                &:nth-child(5n+3) .post-zoom {
+                    background: #16528e;
+                }
+
+                &:nth-child(6n+2) .post-zoom {
+                    background: #e8846b;
+                }
+
+                &:nth-child(7n+1) .post-zoom {
+                    background: #72616e;
+                }
+                
             }
         }        
     }

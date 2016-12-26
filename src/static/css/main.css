@@ -30,15 +30,40 @@ html, body {
       height: 100%; }
       .main-container .content .post-list-container .post-container {
         position: relative; }
-        .main-container .content .post-list-container .post-container .post-zoom {
-          width: 300px;
-          height: 100%; }
         .main-container .content .post-list-container .post-container .post {
           position: absolute;
           top: 0;
-          height: 100%;
           padding: 0px 30px;
           word-wrap: break-word;
-          word-break: break-all; }
+          word-break: break-all;
+          margin-top: 80px; }
+        .main-container .content .post-list-container .post-container .post-zoom {
+          width: 300px;
+          height: 100%; }
+        .main-container .content .post-list-container .post-container:hover .post-zoom {
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transform: scale(1.1);
+          -webkit-transform-origin: bottom;
+          -moz-transform-origin: bottom;
+          -ms-transform-origin: bottom;
+          -o-transform-origin: bottom;
+          transform-origin: bottom; }
+        .main-container .content .post-list-container .post-container:nth-child(1n+7) .post-zoom {
+          background: #0082c8; }
+        .main-container .content .post-list-container .post-container:nth-child(2n+6) .post-zoom {
+          background: #167c80; }
+        .main-container .content .post-list-container .post-container:nth-child(3n+5) .post-zoom {
+          background: #a2c5bf; }
+        .main-container .content .post-list-container .post-container:nth-child(4n+4) .post-zoom {
+          background: #e54b4b; }
+        .main-container .content .post-list-container .post-container:nth-child(5n+3) .post-zoom {
+          background: #16528e; }
+        .main-container .content .post-list-container .post-container:nth-child(6n+2) .post-zoom {
+          background: #e8846b; }
+        .main-container .content .post-list-container .post-container:nth-child(7n+1) .post-zoom {
+          background: #72616e; }
 
 /*# sourceMappingURL=main.css.map */
