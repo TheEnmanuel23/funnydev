@@ -1,9 +1,14 @@
+
+
 $(function(){
 	var $body = $('body');
 	var $post = $('.post-list-container .post-container');
 	
 	$post.hover(function(e){
 		$body.css('overflow-y', 'hidden');
+		var $post_zoom = $(e.currentTarget).find('.post-zoom');
+		console.log($post_zoom);
+		$post_zoom.toggleClass('red');
 		/*
 		var $background_trans = $('.post-container .post-zoom .background-trans');
 		$current_post_readmore_container = $(e.currentTarget).find('.container-read-more');

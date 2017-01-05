@@ -90,35 +90,42 @@ html, body {
                     @include prefix(transform-origin, bottom);
                 }
 
-                &:nth-child(1n+7) .post-zoom {
-                    background: #0082c8;
-                }
-
-                &:nth-child(2n+6) .post-zoom {
-                    background: #167c80;
-                }
-
-                &:nth-child(3n+5) .post-zoom {
-                    background: #a2c5bf;
-                }
-
-                &:nth-child(4n+4) .post-zoom {
-                    background: #e54b4b;
-                }
-
-                &:nth-child(5n+3) .post-zoom {
-                    background: #16528e;
-                }
-
-                &:nth-child(6n+2) .post-zoom {
-                    background: #e8846b;
-                }
-
-                &:nth-child(7n+1) .post-zoom {
-                    background: #72616e;
-                }
                 
             }
         }        
     }
+}
+
+.red{
+   
+    border: 1px solid red;
+}
+
+
+.rojo {
+     background: #72616e;
+}
+
+.azul{
+    background: #e8846b;
+}
+
+.amarillo{
+    background: #16528e;
+}
+
+.verde{
+    background: #e54b4b;
+}
+
+.naranja{
+    background: #a2c5bf;
+}
+
+.cafe{
+     background: #0082c8;
+}
+
+.negro {   
+    background: #167c80;
 }
