@@ -89,7 +89,33 @@ html, body {
                     @include prefix(transform, scale(1.1));
                     @include prefix(transform-origin, bottom);
                 }
+                & .rojo {
+                     background: #72616e;
+                }
 
+                & .azul{
+                    background: #e8846b;
+                }
+
+                & .amarillo{
+                    background: #16528e;
+                }
+
+                & .verde{
+                    background: #e54b4b;
+                }
+
+                & .naranja{
+                    background: #a2c5bf;
+                }
+
+                & .cafe{
+                     background: #0082c8;
+                }
+
+                & .negro {   
+                    background: #167c80;
+                }  
                 
             }
         }        
@@ -102,30 +128,3 @@ html, body {
 }
 
 
-.rojo {
-     background: #72616e;
-}
-
-.azul{
-    background: #e8846b;
-}
-
-.amarillo{
-    background: #16528e;
-}
-
-.verde{
-    background: #e54b4b;
-}
-
-.naranja{
-    background: #a2c5bf;
-}
-
-.cafe{
-     background: #0082c8;
-}
-
-.negro {   
-    background: #167c80;
-}
