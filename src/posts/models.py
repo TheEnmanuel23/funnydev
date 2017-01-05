@@ -55,17 +55,15 @@ class Post(models.Model):
 
 @receiver(pre_save, sender=Post)
 def pre_save_post_receiver(sender, instance, *args, **kwargs):
-	instance.slug = slugify(instance.title)
-
 	colors = ['rojo','azul','amarillo','verde','naranja','cafe','negro']
 	lastPost = Post.objects.last()
-	
 	if lastPost == None:
 		instance.colorCss = colors[0]
-	else:
-		import ipdb; ipdb.set_trace()
+	elif instance.slug ==  None or instance.slug == '':
 		colorLastIndex = colors.index(lastPost.colorCss)
 		if (colorLastIndex + 1) < len(colors):
 			instance.colorCss = colors[colorLastIndex + 1]
 		else:
 			instance.colorCss = colors[0]
+
+	instance.slug = slugify(instance.title)
