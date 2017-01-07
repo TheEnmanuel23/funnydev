@@ -63,21 +63,10 @@ html, body {
     .content{
         height: 100%;
 
-        .post-list-container{
+        .panels{
             display: flex;
             height: 100%;
 
-            .post-container{
-                position: relative;
-
-                .post{
-                    position: absolute;
-                    top: 0;
-                    padding: 0px 30px;
-                    word-wrap: break-word;
-                    word-break: break-all;
-                    margin-top: 80px;
-                }
 
                 .post-zoom{
                     width: 300px;
@@ -89,31 +78,31 @@ html, body {
                     @include prefix(transform, scale(1.1));
                     @include prefix(transform-origin, bottom);
                 }
-                & .rojo {
+                & .purple {
                      background: #72616e;
                 }
 
-                & .azul{
+                & .orange{
                     background: #e8846b;
                 }
 
-                & .amarillo{
+                & .navy{
                     background: #16528e;
                 }
 
-                & .verde{
+                & .red{
                     background: #e54b4b;
                 }
 
-                & .naranja{
+                & .lime{
                     background: #a2c5bf;
                 }
 
-                & .cafe{
+                & .green{
                      background: #0082c8;
                 }
 
-                & .negro {   
+                & .blue {   
                     background: #167c80;
                 }  
                 

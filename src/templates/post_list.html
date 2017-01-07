@@ -11,22 +11,23 @@
 		</div>	
 	</form>
 	-->
-	<div class="post-list-container">
+	<div class="panels">
 		 {% for post in posts %}
-		 	<div class="post-container">
-	 			<div class="container-read-more"></div>		 			
-		 		<div class="post-zoom {{ post.colorCss }}">
-		 			<div class="background-trans"></div>
-		 		</div>
-				<div class="post">	
-					<h5 class="date">{{ post.timestamp|date:'d M Y' }}</h5>
-					<h1 class="title">{{ post.title }}</h1>
-					<p class="description">{{ post.description }}</p>
-					<h6 class="author"><span class="createby">Creado por:</span> <a href="{{ post.author.link }}" target="blank">{{ post.author }}</a></h6>					
-					<a href="{{ post.get_absolute_url }}" class="read-more"><i class="fa fa-eye eye-read-more" aria-hidden="true">						
-					</i>Leer más</a>
-				</div>
-		 	</div>
+			<a href="{{ post.get_absolute_url }}" class="panel">
+			  <div class="content-post">
+			    <div class="fixed">
+			      <span class="small">{{ post.timestamp|date:'d M Y' }}</span>
+			      <h1>{{ post.title }}</h1>
+			      <span class="excerpt"><p>{{ post.description }}</p>
+			      </span>
+			      <span class="autor"><a href="{{ post.author.link }}">{{ post.author }}</a></span>
+			      <span class="small read"><span class="icon"></span>Leer Artículo</span>
+			    </div>
+			  </div>
+			  <div class="color">
+			    <div class="footer"></div>
+			  </div>
+			</a>
 		{% endfor %}
 	</div>
 {% endblock content %}

@@ -1,2 +1,42 @@
-html,body{height:100%;width:100%;font-family:'Roboto', sans-serif;margin:0;padding:0}.main-container{display:flex;flex-direction:column;height:100%;width:100%}.main-container .main-menu{z-index:10}.main-container .main-menu nav{background:#f3f3f3;position:fixed;right:0;left:0}.main-container .main-menu nav ul{display:flex;justify-content:center;flex-direction:row}.main-container .main-menu nav ul li{list-style:none}.main-container .content{height:100%}.main-container .content .post-list-container{display:flex;height:100%}.main-container .content .post-list-container .post-container{position:relative}.main-container .content .post-list-container .post-container .post{position:absolute;top:0;padding:0px 30px;word-wrap:break-word;word-break:break-all;margin-top:80px}.main-container .content .post-list-container .post-container .post-zoom{width:300px;height:100%}.main-container .content .post-list-container .post-container:hover .post-zoom{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);-webkit-transform-origin:bottom;-moz-transform-origin:bottom;-ms-transform-origin:bottom;-o-transform-origin:bottom;transform-origin:bottom}.main-container .content .post-list-container .post-container .rojo{background:#72616e}.main-container .content .post-list-container .post-container .azul{background:#e8846b}.main-container .content .post-list-container .post-container .amarillo{background:#16528e}.main-container .content .post-list-container .post-container .verde{background:#e54b4b}.main-container .content .post-list-container .post-container .naranja{background:#a2c5bf}.main-container .content .post-list-container .post-container .cafe{background:#0082c8}.main-container .content .post-list-container .post-container .negro{background:#167c80}.red{border:1px solid red}
-/*# sourceMappingURL=main.css.map */
+/*
+Error: Invalid CSS after "    }": expected selector or at-rule, was "}"
+        on line 112 of static/devoloment_static/scss/main.scss
+
+107:                 }  
+108:                 
+109:             }
+110:         }        
+111:     }
+112: }
+113: 
+114: .red{
+115:    
+116:     border: 1px solid red;
+117: }
+
+Backtrace:
+static/devoloment_static/scss/main.scss:112
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/scss/parser.rb:1191:in `expected'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/scss/parser.rb:42:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    }\": expected selector or at-rule, was \"}\"\A         on line 112 of static/devoloment_static/scss/main.scss\A \A 107:                 }  \A 108:                 \A 109:             }\A 110:         }        \A 111:     }\A 112: }\A 113: \A 114: .red{\A 115:    \A 116:     border: 1px solid red;\A 117: }"; }

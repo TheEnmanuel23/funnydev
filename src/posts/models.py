@@ -55,7 +55,7 @@ class Post(models.Model):
 
 @receiver(pre_save, sender=Post)
 def pre_save_post_receiver(sender, instance, *args, **kwargs):
-	colors = ['rojo','azul','amarillo','verde','naranja','cafe','negro']
+	colors = ['purple','orange','navy','red','lime','green','blue']
 	lastPost = Post.objects.last()
 	if lastPost == None:
 		instance.colorCss = colors[0]
