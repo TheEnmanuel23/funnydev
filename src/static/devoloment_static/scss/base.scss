@@ -126,6 +126,7 @@ form {
 .post-list-container {
     display: flex;
     height: 100%;
+    overflow-y: hidden;
 
     .post-container {
         position: relative;
