@@ -31,12 +31,12 @@ html, body {
           font-weight: bold;
           font-size: 12px;
           letter-spacing: 1px; }
+      .main-menu nav ul .home a {
+        color: black;
+        margin: 0 20px 0 0; }
       .main-menu nav ul .divider {
         color: gray;
-        margin: 0 20px 0 20px; }
-      .main-menu nav ul .funnydev a {
-        color: black;
-        margin: 0 20px 0 20px; }
+        margin: 0 20px 0 0; }
 
 form {
   position: fixed;
