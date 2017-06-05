@@ -36,6 +36,7 @@ class Post(models.Model):
 	description = models.CharField(max_length=2000, default='')
 	author = models.ForeignKey(Author)
 	category = models.ManyToManyField(Category)
+	poster = models.ImageField(upload_to='post_resources/', null=True, blank=True)
 
 
 	def get_absolute_url(self):		

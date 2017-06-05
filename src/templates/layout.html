@@ -18,7 +18,7 @@
 	      <ul>
 	        <li class="home"><a class="{% if request.path == '/' %}actived{% endif %}" href="{% url 'home' %}">Home</a></li>
 	        <li class="divider">|</li>
-	        <li class="funnydev"><a class="{% if request.path == '/funnydev/' %}actived{% endif %}" href="{% url 'post_list' %}">FunnyDev</a></li>
+	        <li class="funnydev"><a class="{% if '/funnydev/' in request.path %}actived{% endif %}" href="{% url 'post_list' %}">FunnyDev</a></li>
 	      </ul>
 	    </nav>
 	  </div>
