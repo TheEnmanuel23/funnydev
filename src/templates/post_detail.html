@@ -21,6 +21,7 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 
 	<div class="post-detail-main">
+		<a class="change-post preview" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
 		<div class="post_detail-document">
 			<div class="post-detail">			
 				<h1><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1>
@@ -44,6 +45,7 @@
 				<hr>
 				<div class="fb-comments" data-href="{{ request.build_absolute_uri }}" data-numposts="5"></div>
 			</div>
-		</div>
+		</div>		
+		<a class="change-post next" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
 	</div>
 {% endblock content %}
