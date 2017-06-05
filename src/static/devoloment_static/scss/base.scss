@@ -67,13 +67,12 @@ html, body {
             }
             .home {
                 a {
-                    color: black;
                     margin: 0 20px 0 0;
                 }
             }
 
             .divider {
-                color: gray;
+                color: #b1b1b1;
                 margin: 0 20px 0 0;
             }
         }
@@ -276,4 +275,8 @@ form {
 .visibility_input_search{
   visibility: initial;
   color: red;
+}
+
+.actived {
+    color: black !important;
 }
