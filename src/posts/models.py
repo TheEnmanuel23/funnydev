@@ -49,6 +49,19 @@ class Post(models.Model):
         }
 		return reverse('post_detail', kwargs=kwargs)
 
+	def get_preview_post(self):
+		lista = list(Post.objects.filter(state='p'))
+		previewIndex = lista.index(self)-1
+		previewPost = None if previewIndex < 0 else lista[previewIndex]
+		return previewPost
+
+	def get_next_post(self):
+		lista = list(Post.objects.filter(state='p'))
+		nextIndex = lista.index(self)+1
+		nextPost = None if nextIndex >= len(lista) else lista[nextIndex]
+		return nextPost
+
+
 	def __str__(self):
 		return self.title
 
