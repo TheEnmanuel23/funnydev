@@ -36,7 +36,8 @@ class Post(models.Model):
 	description = models.CharField(max_length=2000, default='')
 	author = models.ForeignKey(Author)
 	category = models.ManyToManyField(Category)
-	poster = models.ImageField(upload_to='post_resources/', null=True, blank=True)
+	poster = models.ImageField(upload_to='post_resources/', null=True, blank=True)	
+	colorCss = models.CharField(max_length=50, default='', blank=True, editable=False)
 
 
 	def get_absolute_url(self):		
@@ -66,6 +67,18 @@ class Post(models.Model):
 		return self.title
 
 
+
 @receiver(pre_save, sender=Post)
 def pre_save_post_receiver(sender, instance, *args, **kwargs):
+	colors = ['purple','orange','navy','red','lime','green','blue']
+	lastPost = Post.objects.last()
+	if lastPost == None:
+		instance.colorCss = colors[0]
+	elif instance.slug ==  None or instance.slug == '':
+		colorLastIndex = colors.index(lastPost.colorCss)
+		if (colorLastIndex + 1) < len(colors):
+			instance.colorCss = colors[colorLastIndex + 1]
+		else:
+			instance.colorCss = colors[0]
+
 	instance.slug = slugify(instance.title)

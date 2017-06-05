@@ -165,20 +165,6 @@ form {
       -o-transform-origin: bottom;
       transform-origin: bottom;
       z-index: 57; }
-    .post-list-container .post-container:nth-child(1n+7) .post-zoom {
-      background: #0082c8; }
-    .post-list-container .post-container:nth-child(2n+6) .post-zoom {
-      background: #167c80; }
-    .post-list-container .post-container:nth-child(3n+5) .post-zoom {
-      background: #a2c5bf; }
-    .post-list-container .post-container:nth-child(4n+4) .post-zoom {
-      background: #e54b4b; }
-    .post-list-container .post-container:nth-child(5n+3) .post-zoom {
-      background: #16528e; }
-    .post-list-container .post-container:nth-child(6n+2) .post-zoom {
-      background: #e8846b; }
-    .post-list-container .post-container:nth-child(7n+1) .post-zoom {
-      background: #72616e; }
 
 .opacity_post {
   width: 300px;
@@ -199,6 +185,27 @@ form {
 
 .actived {
   color: black !important; }
+
+.blue {
+  background: #0082c8; }
+
+.green {
+  background: #167c80; }
+
+.lime {
+  background: #a2c5bf; }
+
+.red {
+  background: #e54b4b; }
+
+.navy {
+  background: #16528e; }
+
+.orange {
+  background: #e8846b; }
+
+.purple {
+  background: #72616e; }
 
 .post-detail-main {
   display: flex;
@@ -235,7 +242,6 @@ form {
   transition: background-color 400ms linear; }
 
 .change-post:hover {
-  background-color: red;
   color: white; }
 
 .preview {

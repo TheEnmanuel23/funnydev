@@ -225,34 +225,6 @@ form {
             @include prefix(transform-origin, bottom);
             z-index: 57;
         }
-
-        &:nth-child(1n+7) .post-zoom {
-            background: #0082c8;
-        }
-
-        &:nth-child(2n+6) .post-zoom {
-            background: #167c80;
-        }
-
-        &:nth-child(3n+5) .post-zoom {
-            background: #a2c5bf;
-        }
-
-        &:nth-child(4n+4) .post-zoom {
-            background: #e54b4b;
-        }
-
-        &:nth-child(5n+3) .post-zoom {
-            background: #16528e;
-        }
-
-        &:nth-child(6n+2) .post-zoom {
-            background: #e8846b;
-        }
-
-        &:nth-child(7n+1) .post-zoom {
-            background: #72616e;
-        }
     }
 }
 
@@ -279,6 +251,34 @@ form {
 
 .actived {
     color: black !important;
+}
+
+.blue {
+    background: #0082c8;
+}
+
+.green {
+    background: #167c80;
+}
+
+.lime {
+    background: #a2c5bf;
+}
+
+.red{
+    background: #e54b4b;
+}
+
+.navy{
+    background: #16528e;
+}
+
+.orange {
+    background: #e8846b;
+}
+
+.purple {
+    background: #72616e;
 }
 
 @import 'post_detail'
