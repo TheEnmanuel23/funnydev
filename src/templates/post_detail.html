@@ -20,9 +20,11 @@
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 
-  	<figure>
-		<img src="{{ post.poster.url }}" alt="{{post.title}}">
-	</figure>
+	{% if post.poster %}
+	  	<figure>
+			<img src="{{ post.poster.url }}" alt="{{post.title}}">
+		</figure>
+	{% endif %}
 	<h1><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1>
 	<h6 class="author"><span>Creado por:</span> <a href="{{ post.author.link }}" target="blank">{{ post.author }}</a></h6>
 
