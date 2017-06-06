@@ -28,19 +28,22 @@
 
 		<div class="post_detail-document">
 			<div class="post-detail">
-				<h1><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1>
+				<h1 class="title"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1>
+				<h4 class="description">{{ post.description }}</h4>
 				{% if post.poster %}
-			  	<figure>
+			  	<figure class="poster">
 					<img src="{{ post.poster.url }}" alt="{{post.title}}">
 				</figure>
 				{% endif %}
 				<h6 class="author"><span>Creado por:</span> <a href="{{ post.author.link }}" target="blank">{{ post.author }}</a></h6>
 
-				<h5>{{ post.timestamp }}</h5>
-				<p>{{ post.content|safe }}</p>
-				{% for cat in post.category.all %}
-					<p>{{ cat }}</p>
-				{% endfor %}
+				<h5 class="fecha">{{ post.timestamp }}</h5>
+				<div class="content">{{ post.content|safe }}</div>
+				<div class="categories">
+					{% for cat in post.category.all %}
+						<p>{{ cat }}</p>
+					{% endfor %}
+				</div>
 			</div>
 			<div class="facebook-section">		
 				<p>

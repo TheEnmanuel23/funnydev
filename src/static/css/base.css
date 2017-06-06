@@ -215,13 +215,33 @@ form {
   position: relative; }
 
 .post_detail-document {
+  width: 800px;
   display: flex;
   flex-direction: column;
-  min-width: 900px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px; }
+  margin-top: 60px; }
+  .post_detail-document .post-detail .title {
+    margin-bottom: 3px; }
+    .post_detail-document .post-detail .title a {
+      color: rgba(0, 0, 0, 0.8);
+      text-decoration: none;
+      font-size: 40px;
+      font-family: "Droid Sans", sans-serif; }
+  .post_detail-document .post-detail .description {
+    color: #808080;
+    font-weight: 100;
+    margin: 0;
+    font-size: 25px;
+    font-family: "BenchNine", sans-serif; }
+  .post_detail-document .post-detail .poster {
+    overflow: hidden;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 25px;
+    max-height: 400px; }
+  .post_detail-document .post-detail .content {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    line-height: 1.5; }
 
 .change-post {
   position: fixed;
