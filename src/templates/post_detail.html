@@ -23,7 +23,7 @@
 	<div class="post-detail-main">
 
 		{% if post.get_preview_post %}
-			<a class="change-post preview {{ post.get_preview_post.colorCss }}" href="{{ post.get_preview_post.get_absolute_url }}"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+			<a class="change-post preview" href="{{ post.get_preview_post.get_absolute_url }}"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
 		{% endif %}
 
 		<div class="post_detail-document">
@@ -51,7 +51,7 @@
 			</div>
 		</div>
 		{% if post.get_next_post %}
-			<a class="change-post next {{ post.get_next_post.colorCss }}" href="{{post.get_next_post.get_absolute_url}}"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<a class="change-post next" href="{{post.get_next_post.get_absolute_url}}"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
 		{% endif %}
 	</div>
 {% endblock content %}

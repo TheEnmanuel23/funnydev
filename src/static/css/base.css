@@ -242,7 +242,7 @@ form {
   transition: background-color 400ms linear; }
 
 .change-post:hover {
-  color: white; }
+  color: black; }
 
 .preview {
   left: 0; }
