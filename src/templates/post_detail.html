@@ -28,16 +28,19 @@
 
 		<div class="post_detail-document">
 			<div class="post-detail">
-				<h1 class="title"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1>
-				<h4 class="description">{{ post.description }}</h4>
+				<div class="title-section">
+					<div class="title-description">						
+						<h1 class="title"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1>
+						<h4 class="description">{{ post.description }}</h4>
+					</div>
+					<h5 class="fecha">{{ post.timestamp|date:"d M Y" }}</h5>
+				</div>
 				{% if post.poster %}
 			  	<figure class="poster">
 					<img src="{{ post.poster.url }}" alt="{{post.title}}">
 				</figure>
 				{% endif %}
 				<h6 class="author"><span>Creado por:</span> <a href="{{ post.author.link }}" target="blank">{{ post.author }}</a></h6>
-
-				<h5 class="fecha">{{ post.timestamp }}</h5>
 				<div class="content">{{ post.content|safe }}</div>
 				<div class="categories">
 					{% for cat in post.category.all %}

@@ -219,13 +219,25 @@ form {
   display: flex;
   flex-direction: column;
   margin-top: 60px; }
-  .post_detail-document .post-detail .title {
-    margin-bottom: 3px; }
-    .post_detail-document .post-detail .title a {
-      color: rgba(0, 0, 0, 0.8);
-      text-decoration: none;
-      font-size: 40px;
-      font-family: "Droid Sans", sans-serif; }
+  .post_detail-document .post-detail .title-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .post_detail-document .post-detail .title-section .title-description {
+      display: flex;
+      flex-direction: column; }
+      .post_detail-document .post-detail .title-section .title-description .title {
+        margin-bottom: 3px; }
+        .post_detail-document .post-detail .title-section .title-description .title a {
+          color: rgba(0, 0, 0, 0.8);
+          text-decoration: none;
+          font-size: 40px;
+          font-family: "Droid Sans", sans-serif; }
+    .post_detail-document .post-detail .title-section .fecha {
+      color: #808080;
+      font-family: BenchNine;
+      letter-spacing: 1px;
+      font-size: 15px; }
   .post_detail-document .post-detail .description {
     color: #808080;
     font-weight: 100;
