@@ -99,14 +99,73 @@
     @include prefix(transition, background-color 400ms linear);
 }
 
-.change-post:hover {
-	color: black;
-}
-
 .preview {
 	left: 0;
 }
 
 .next {
 	right: 0;
+}
+
+.blue-color {
+    color: #0082c8;
+}
+
+.green-color {
+    color: #167c80;
+}
+
+.lime-color {
+    color: #a2c5bf;
+}
+
+.red-color {
+    color: #e54b4b;
+}
+
+.navy-color {
+    color: #16528e;
+}
+
+.orange-color {
+    color: #e8846b;
+}
+
+.purple-color {
+    color: #72616e;
+}
+
+.purple-background-navigator:hover {
+    background: #72616e;
+	color: white;
+}
+
+.blue-background-navigator:hover {
+    background: #0082c8;
+	color: white;
+}
+
+.green-background-navigator:hover {
+    background: #167c80;
+	color: white;
+}
+
+.lime-background-navigator:hover {
+    background: #a2c5bf;
+	color: white;
+}
+
+.red-background-navigator:hover {
+    background: #e54b4b;
+	color: white;
+}
+
+.navy-background-navigator:hover {
+    background: #16528e;
+	color: white;
+}
+
+.orange-background-navigator:hover{
+    background: #e8846b;
+	color: white;
 }
