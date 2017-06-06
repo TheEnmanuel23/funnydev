@@ -207,6 +207,27 @@ form {
 .purple {
   background: #72616e; }
 
+.blue-color {
+  color: #0082c8; }
+
+.green-color {
+  color: #167c80; }
+
+.lime-color {
+  color: #a2c5bf; }
+
+.red-color {
+  color: #e54b4b; }
+
+.navy-color {
+  color: #16528e; }
+
+.orange-color {
+  color: #e8846b; }
+
+.purple-color {
+  color: #72616e; }
+
 .post-detail-main {
   display: flex;
   flex-direction: column;
@@ -229,7 +250,6 @@ form {
       .post_detail-document .post-detail .title-section .title-description .title {
         margin-bottom: 3px; }
         .post_detail-document .post-detail .title-section .title-description .title a {
-          color: rgba(0, 0, 0, 0.8);
           text-decoration: none;
           font-size: 40px;
           font-family: "Droid Sans", sans-serif; }
@@ -256,6 +276,16 @@ form {
     line-height: 1.5;
     font-family: "Open Sans";
     letter-spacing: 0.5px; }
+  .post_detail-document .post-detail .author {
+    margin-top: 60px;
+    font-size: 15px; }
+    .post_detail-document .post-detail .author span {
+      color: #rgba 0, 0, 0, 0.8;
+      font-family: "Droid Sans"; }
+    .post_detail-document .post-detail .author a {
+      font-family: "BenchNine", sans-serif;
+      font-size: 17px;
+      letter-spacing: 1px; }
 
 .change-post {
   position: fixed;

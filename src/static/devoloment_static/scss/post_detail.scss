@@ -26,7 +26,7 @@
 		    		margin-bottom: 3px;
 
 		    		a {
-		    			color: rgba(0,0,0,.8);
+		    			//color: rgba(0,0,0,.8);
 		    			text-decoration: none;
 		    			font-size: 40px;
 						font-family: "Droid Sans", sans-serif;
@@ -63,6 +63,22 @@
     		line-height: 1.5;
 		    font-family: "Open Sans";
 		    letter-spacing: 0.5px;
+    	}
+
+    	.author {
+    	    margin-top: 60px;
+    		font-size: 15px;
+
+    		span {
+    		    color: #rgba(0,0,0,.8);
+   				font-family: "Droid Sans";
+    		}
+
+    		a {
+				font-family: "BenchNine", sans-serif;
+				font-size: 17px;
+    			letter-spacing: 1px;
+    		}
     	}
     }
 }

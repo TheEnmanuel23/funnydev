@@ -30,7 +30,7 @@
 			<div class="post-detail">
 				<div class="title-section">
 					<div class="title-description">						
-						<h1 class="title"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1>
+						<h1 class="title"><a class="{{ post.colorCss }}-color" href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1>
 						<h4 class="description">{{ post.description }}</h4>
 					</div>
 					<h5 class="fecha">{{ post.timestamp|date:"d M Y" }}</h5>
@@ -40,13 +40,14 @@
 					<img src="{{ post.poster.url }}" alt="{{post.title}}">
 				</figure>
 				{% endif %}
-				<h6 class="author"><span>Creado por:</span> <a href="{{ post.author.link }}" target="blank">{{ post.author }}</a></h6>
 				<div class="content">{{ post.content|safe }}</div>
 				<div class="categories">
 					{% for cat in post.category.all %}
 						<p>{{ cat }}</p>
 					{% endfor %}
-				</div>
+				</div>}
+
+				<h6 class="author"><span>Creado por:</span> <a class="{{ post.colorCss }}-color" href="{{ post.author.link }}" target="blank">{{ post.author }}</a></h6>
 			</div>
 			<div class="facebook-section">		
 				<p>
