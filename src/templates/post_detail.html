@@ -21,7 +21,7 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 
 	<div class="post-detail-main">
-
+		<a id="close-post" href="#" class="close-post {{ post.colorCss }}-color-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
 		{% if post.get_preview_post %}
 			<a class="change-post preview {{ post.get_preview_post.colorCss }}-background-navigator" href="{{ post.get_preview_post.get_absolute_url }}"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
 		{% endif %}

@@ -339,4 +339,33 @@ form {
   background: #e8846b;
   color: white; }
 
+.close-post {
+  position: absolute;
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.15);
+  top: 70px;
+  right: 150px;
+  text-decoration: none; }
+
+.blue-color-close:hover {
+  color: #0082c8; }
+
+.green-color-close:hover {
+  color: #167c80; }
+
+.lime-color-close:hover {
+  color: #a2c5bf; }
+
+.red-color-close:hover {
+  color: #e54b4b; }
+
+.navy-color-close:hover {
+  color: #16528e; }
+
+.orange-color-close:hover {
+  color: #e8846b; }
+
+.purple-color-close:hover {
+  color: #72616e; }
+
 /*# sourceMappingURL=base.css.map */
