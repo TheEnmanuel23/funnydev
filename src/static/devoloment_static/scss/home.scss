@@ -1,9 +1,113 @@
-.content-home {	
-	border: 1px solid red;
-    margin-top: 60px;
+.content-home {
+    margin-top: 100px;
+    padding: 0 80px;
 
-    .skills {
-		height: 450px;
-		width: 100%;
+    header {
+    	display: flex;
+    	justify-content: space-between;
+
+    	.about {
+    		display: flex;
+    		flex-direction: column;
+			width: 100%;
+			justify-content: space-around;
+
+    		.personal-description {
+    			display: flex;
+			    flex-direction: column;
+			    align-items: center;
+
+    			.avatar {
+					height: 150px;
+					border-radius: 50%;
+				}
+
+				.description {
+					display: flex;
+				    flex-direction: column;
+				    justify-content: center;
+				    align-items: center;
+
+				    h1 {
+    					margin-bottom: 5px;
+				    }
+
+				    p { 
+				      	margin: 0;
+    					text-align: center;
+				    }
+				}
+    		}
+
+    		.contact {
+    			display: flex;
+    			justify-content: space-around;
+   				margin-top: 50px;
+
+    			.socials {
+				    display: flex;
+				    align-items: center;
+
+    				a {
+						font-size: 2.5em;
+    				}
+
+					.fa-facebook-official {
+						color: #4267b2;
+						margin-right:  5px;
+					}
+
+					.fa-twitter {
+						color: #1da1f2;
+						margin-right: 5px;
+					}
+
+					.fa-linkedin-square {
+						color: #0077B5;
+						margin-right:  5px;
+					}
+
+					.fa-github {
+						color: #24292e;
+					}
+    			}
+
+    			.email {	
+    				display: flex;
+
+    				.icon {
+						font-size: 2em;
+						padding: 10px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+
+					.email_description, .celNum {
+						display: flex;
+						align-items: center;
+					}
+
+					.email_description {
+
+						.icon {
+							color:  #d82b45;
+						}
+					}
+
+					.celNum {
+
+						.icon {
+							color:  #48cfad;
+						}
+					}
+    			}
+    		}
+    	}
+
+	    .skills {
+			height: 100%;
+			width: 80%;
+	    }
     }
 }

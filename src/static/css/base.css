@@ -208,11 +208,71 @@ form {
   background: #72616e; }
 
 .content-home {
-  border: 1px solid red;
-  margin-top: 60px; }
-  .content-home .skills {
-    height: 450px;
-    width: 100%; }
+  margin-top: 100px;
+  padding: 0 80px; }
+  .content-home header {
+    display: flex;
+    justify-content: space-between; }
+    .content-home header .about {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-around; }
+      .content-home header .about .personal-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .content-home header .about .personal-description .avatar {
+          height: 150px;
+          border-radius: 50%; }
+        .content-home header .about .personal-description .description {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .content-home header .about .personal-description .description h1 {
+            margin-bottom: 5px; }
+          .content-home header .about .personal-description .description p {
+            margin: 0;
+            text-align: center; }
+      .content-home header .about .contact {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px; }
+        .content-home header .about .contact .socials {
+          display: flex;
+          align-items: center; }
+          .content-home header .about .contact .socials a {
+            font-size: 2.5em; }
+          .content-home header .about .contact .socials .fa-facebook-official {
+            color: #4267b2;
+            margin-right: 5px; }
+          .content-home header .about .contact .socials .fa-twitter {
+            color: #1da1f2;
+            margin-right: 5px; }
+          .content-home header .about .contact .socials .fa-linkedin-square {
+            color: #0077B5;
+            margin-right: 5px; }
+          .content-home header .about .contact .socials .fa-github {
+            color: #24292e; }
+        .content-home header .about .contact .email {
+          display: flex; }
+          .content-home header .about .contact .email .icon {
+            font-size: 2em;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          .content-home header .about .contact .email .email_description, .content-home header .about .contact .email .celNum {
+            display: flex;
+            align-items: center; }
+          .content-home header .about .contact .email .email_description .icon {
+            color: #d82b45; }
+          .content-home header .about .contact .email .celNum .icon {
+            color: #48cfad; }
+    .content-home header .skills {
+      height: 100%;
+      width: 80%; }
 
 .post-detail-main {
   display: flex;

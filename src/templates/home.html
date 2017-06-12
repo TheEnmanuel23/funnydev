@@ -1,9 +1,46 @@
 {% extends 'layout.html' %}
+{% load staticfiles %}
 {% block content %}
-	<div class="content-home">		
-		<h1>acerca de mi</h1>
-	    <section class="skills">
-			<canvas id="skillsChart" width="540" height="300"></canvas>
-		</section>
+	<div class="content-home">
+		<header>
+		    <div class="about">    				
+	    		<section class="personal-description">
+	    			<img src="{% static 'img/foto_black.jpg' %}" class="avatar"> 
+	    			<div class="description">
+	    				<h1>Ing. Enmanuel Jarquín</h1>
+	    				<p>I’m a software developer, I love learning Javascript(Node, React), DJango and practicing SOLID with C#, and I’ve written 2 posts !!.</p>
+	    			</div>    			
+	    		</section>
+	    		<section class="contact">
+	    			<div class="socials">
+	    				<a href="https://www.facebook.com/TheEnmanuel23" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/@theenmanuel23" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://www.linkedin.com/in/enmanueljarquin/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+						<a href="https://github.com/theenmanuel23" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+	    			</div>
+	    			<div class="email">
+		    			<div class="email_description">
+		    				<span class="icon">
+							  <i class="fa fa-envelope aria-hidden="true""></i>
+							</span> 
+							<span>enmisac@gmail.com</span>
+		    			</div>
+	    				<div class="celNum">    					
+							<span class="icon">
+							  <i class="fa fa-mobile aria-hidden="true""></i>
+							</span> 
+							<span>+(505) 8203-3752</span>
+	    				</div>
+	    			</div>
+	    		</section>
+    		</div>
+		    <section class="skills">
+				<canvas id="skillsChart" width="500" height="300"></canvas>
+			</section>
+		</header>
+		<!-- 
+			<section>Lista de repositorios
+			</section>
+		 -->
 	</div>
 {% endblock content %}
