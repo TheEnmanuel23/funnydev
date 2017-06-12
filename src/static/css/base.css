@@ -231,7 +231,8 @@ form {
           justify-content: center;
           align-items: center; }
           .content-home header .about .personal-description .description h1 {
-            margin-bottom: 5px; }
+            margin-bottom: 5px;
+            color: #e54b4b; }
           .content-home header .about .personal-description .description p {
             margin: 0;
             text-align: center; }
