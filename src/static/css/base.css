@@ -274,6 +274,22 @@ form {
     .content-home header .skills {
       height: 100%;
       width: 80%; }
+  .content-home .certificaciones {
+    margin-top: 40px; }
+    .content-home .certificaciones ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .content-home .certificaciones ul li {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin-left: 10px; }
+        .content-home .certificaciones ul li img {
+          height: 250px;
+          width: 300px; }
 
 .post-detail-main {
   display: flex;
