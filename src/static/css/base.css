@@ -275,7 +275,7 @@ form {
       height: 100%;
       width: 80%; }
   .content-home .certificaciones {
-    margin-top: 40px; }
+    margin-top: 100px; }
     .content-home .certificaciones ul {
       padding: 0;
       margin: 0;
@@ -286,7 +286,22 @@ form {
         display: flex;
         flex-direction: column;
         list-style-type: none;
-        margin-left: 10px; }
+        margin-left: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px; }
+        .content-home .certificaciones ul li figure.jspro, .content-home .certificaciones ul li figure.jspro figcaption {
+          background-color: #eedb50; }
+        .content-home .certificaciones ul li figure.vuebas, .content-home .certificaciones ul li figure.vuebas figcaption {
+          background-color: #eedb50; }
+        .content-home .certificaciones ul li figure.csharpbas, .content-home .certificaciones ul li figure.csharpbas figcaption {
+          background-color: #ff3c92; }
+        .content-home .certificaciones ul li figure.disenioweb, .content-home .certificaciones ul li figure.disenioweb figcaption {
+          background-color: #01a767; }
+        .content-home .certificaciones ul li figure figcaption h3 {
+          font-size: 35px; }
+        .content-home .certificaciones ul li figure figcaption p {
+          font-size: 25px; }
         .content-home .certificaciones ul li img {
           height: 250px;
           width: 300px; }
