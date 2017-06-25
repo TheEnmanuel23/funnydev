@@ -51,21 +51,26 @@
 
     				a {
 						font-size: 2.5em;
+						transition: transform 1s;
+
+						&:hover {
+							transform: scale(1.2)
+						}
     				}
 
 					.fa-facebook-official {
 						color: #4267b2;
-						margin-right:  5px;
+						margin-right:  10px;
 					}
 
 					.fa-twitter {
 						color: #1da1f2;
-						margin-right: 5px;
+						margin-right: 10px;
 					}
 
 					.fa-linkedin-square {
 						color: #0077B5;
-						margin-right:  5px;
+						margin-right:  10px;
 					}
 
 					.fa-github {

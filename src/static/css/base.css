@@ -244,16 +244,19 @@ form {
           display: flex;
           align-items: center; }
           .content-home header .about .contact .socials a {
-            font-size: 2.5em; }
+            font-size: 2.5em;
+            transition: transform 1s; }
+            .content-home header .about .contact .socials a:hover {
+              transform: scale(1.2); }
           .content-home header .about .contact .socials .fa-facebook-official {
             color: #4267b2;
-            margin-right: 5px; }
+            margin-right: 10px; }
           .content-home header .about .contact .socials .fa-twitter {
             color: #1da1f2;
-            margin-right: 5px; }
+            margin-right: 10px; }
           .content-home header .about .contact .socials .fa-linkedin-square {
             color: #0077B5;
-            margin-right: 5px; }
+            margin-right: 10px; }
           .content-home header .about .contact .socials .fa-github {
             color: #24292e; }
         .content-home header .about .contact .email {
