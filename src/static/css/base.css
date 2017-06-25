@@ -308,6 +308,10 @@ form {
         .content-home .certificaciones ul li img {
           height: 250px;
           width: 300px; }
+  .content-home footer {
+    margin: 30px 0 10px 0;
+    display: flex;
+    justify-content: center; }
 
 .post-detail-main {
   display: flex;
