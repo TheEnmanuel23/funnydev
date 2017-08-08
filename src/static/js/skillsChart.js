@@ -32,7 +32,7 @@ var options = {
 	}
 }
 var data = {
-    labels: ["Python", "Django", "Javascript", "NodeJs", "HTML", "CSS", "C#"],
+    labels: ["Python", "Django", "Javascript (ES6)", "NodeJs", "HTML", "CSS", "C#"],
     datasets: [
         {
             label: "Skill",
@@ -42,7 +42,7 @@ var data = {
             pointBorderColor: "#aaa",
             pointHoverBackgroundColor: "#aaa",
             pointHoverBorderColor: "#298dbf",
-            data: [60, 65, 60, 55, 65, 50, 70]
+            data: [45, 55, 65, 55, 60, 40, 50]
         }
     ]
 };
