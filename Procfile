@@ -1,1 +1,1 @@
-web: gunicorn enmisac.wsgi --log-file -
+web: gunicorn funnydev.wsgi --log-file -
