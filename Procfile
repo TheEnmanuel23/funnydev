@@ -1,1 +1,1 @@
-web: gunicorn funnydev:app
+web: gunicorn src/posts.wsgi
