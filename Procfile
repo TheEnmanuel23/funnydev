@@ -1,1 +1,1 @@
-web: gunicorn funnydev.wsgi --log-file -
+web: gunicorn posts.wsgi --log-file -
