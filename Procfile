@@ -1,1 +1,1 @@
-web: gunicorn funnydev.wsgi --log-file -
+web: gunicorn src/funnydev.wsgi --log-file -
