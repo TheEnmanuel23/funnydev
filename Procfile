@@ -1,0 +1,1 @@
+web: gunicorn funnydev.wsgi --log-file -
