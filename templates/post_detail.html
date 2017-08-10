@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block title %}FunnyDev - {{ post.title }}{% endblock title %}
+
+{% block content %}
+	<!-- Facebook comments plugin -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!-- Facebook like plugin -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="post-detail-main">
+		<a id="close-post" href="{% url 'home' %}" class="close-post {{ post.colorCss }}-color-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+		{% if post.get_preview_post %}
+			<a class="change-post preview {{ post.get_preview_post.colorCss }}-background-navigator" href="{{ post.get_preview_post.get_absolute_url }}"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+		{% endif %}
+
+		<div class="post_detail-document">
+			<div class="post-detail">
+				<div class="title-section">
+					<div class="title-description">						
+						<h1 class="title"><a class="{{ post.colorCss }}-color" href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1>
+						<h4 class="description">{{ post.description }}</h4>
+					</div>
+					<h5 class="fecha">{{ post.timestamp|date:"d M Y" }}</h5>
+				</div>
+				{% if post.poster %}
+			  	<figure class="poster">
+					<img src="{{ post.poster.url }}" alt="{{post.title}}">
+				</figure>
+				{% endif %}
+				<div class="content">{{ post.content|safe }}</div>
+				<div class="categories">
+					{% for cat in post.category.all %}
+						<p>{{ cat }}</p>
+					{% endfor %}
+				</div>
+
+				<h6 class="author"><span>Creado por:</span> <a class="{{ post.colorCss }}-color" href="{{ post.author.link }}" target="blank">{{ post.author }}</a></h6>
+			</div>
+			<div class="facebook-section">		
+				<p>
+					<div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+				</p>
+				<hr>
+				<div class="fb-comments" data-href="{{ request.build_absolute_uri }}" data-numposts="5"></div>
+			</div>
+		</div>
+		{% if post.get_next_post %}
+			<a id="next" class="change-post next {{ post.get_next_post.colorCss }}-background-navigator" href="{{post.get_next_post.get_absolute_url}}"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+		{% endif %}
+	</div>
+{% endblock content %}

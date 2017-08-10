@@ -1,0 +1,86 @@
+{% extends 'layout.html' %}
+{% load staticfiles %}
+{% block title %}Dev. Enmanuel Jarquin - Inicio{% endblock title %}
+{% block content %}
+	<div class="content-home">
+		<header>
+		    <div class="about">    				
+	    		<section class="personal-description">
+	    			<img src="{% static 'img/foto_black.jpg' %}" class="avatar"> 
+	    			<div class="description">
+	    				<h1>Ing. Enmanuel Jarquín</h1>
+	    				<p>I’m a software developer, I love learning Javascript(Node, React), DJango and practicing SOLID with C#, and I’ve written 2 posts !!.</p>
+	    			</div>    			
+	    		</section>
+	    		<section class="contact">
+	    			<div class="socials">
+	    				<a href="https://www.facebook.com/TheEnmanuel23" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/@theenmanuel23" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://www.linkedin.com/in/enmanueljarquin/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+						<a href="https://github.com/theenmanuel23" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+	    			</div>
+	    			<div class="email">
+		    			<div class="email_description">
+		    				<span class="icon">
+							  <i class="fa fa-envelope aria-hidden="true""></i>
+							</span> 
+							<span>enmisac@gmail.com</span>
+		    			</div>
+	    				<div class="celNum">    					
+							<span class="icon">
+							  <i class="fa fa-mobile aria-hidden="true""></i>
+							</span> 
+							<span>+(505) 8203-3752</span>
+	    				</div>
+	    			</div>
+	    		</section>
+    		</div>
+		    <section class="skills">
+				<canvas id="skillsChart" width="500" height="300"></canvas>
+			</section>
+		</header>		
+		<section class="certificaciones">
+			<ul>
+				<li>
+					<figure class="jspro imghvr-hinge-up ih-delay-md">
+					    <img src="{% static 'img/diploma-javascript-pro.jpg' %}">
+					    <figcaption>
+					    	<h3 class="title-certificado">Javascript</h3>
+					        <p class="description-certificado"><i>"Curso definitivo de javascript"</i></p>
+					    </figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure class="vuebas imghvr-hinge-right ih-delay-md">
+					    <img src="{% static 'img/diploma-vuejs.jpg' %}">
+					    <figcaption>
+					    	<h3 class="title-certificado">VueJs</h3>
+					        <p class="description-certificado"><i>"Curso básico de VueJs"</i></p>
+					    </figcaption>
+					</figure>
+				</li>
+				<li>	
+					<figure class="csharpbas imghvr-flip-vert ih-delay-md">
+					    <img src="{% static 'img/diploma-c-sharp.jpg' %}">
+					    <figcaption>
+					    	<h3 class="title-certificado ">C#</h3>
+					        <p class="description-certificado"><i>"Curso básico de C#"</i></p>
+					    </figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure class="disenioweb imghvr-flip-diag-2 ih-delay-md">
+					    <img src="{% static 'img/diploma-html5-css3.jpg' %}">
+					    <figcaption>
+					    	<h3 class="title-certificado">HTML5 y CSS3</h3>
+					        <p class="description-certificado"><i>"Curso de diseño web"</i></p>
+					    </figcaption>
+					</figure>
+				</li>
+			</ul>
+		</section>
+		<footer>
+			<p>Ing. Enmanuel Isaac Jarquín Mercado - Managua Nicaragua (C) 2017</p>
+		</footer>
+	</div>
+{% endblock content %}
